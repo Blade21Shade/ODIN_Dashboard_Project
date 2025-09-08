@@ -60,10 +60,37 @@ body {
     grid-template-rows: 1fr 1fr;
 
     border-bottom: 2px solid black;
+
+    box-sizing: border-box;
+    padding: 0px 40px;
 }
 
 .header-container > .top-area {
     grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-rows: 1fr;
+}
+
+form {
+    display: grid;
+    grid-template-columns: .01fr 1fr;
+    align-items: center;
+}
+
+form > input[type="search"] {
+    width: 70%;
+    height: 40%;
+
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.top-area-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
 }
 
 .header-container > .bottom-area {
