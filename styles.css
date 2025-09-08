@@ -6,31 +6,45 @@ body {
     height: 100vh;
 }
 
-/*Dashboard*/
-.dashboard-container {
+/*Sidebar*/
+.sidebar-container {
     grid-column: 1 / 2;
     
     display: grid;
-    grid-template-rows: 1fr 3fr 2fr 3fr; /*Last row is just for spacing*/
+    grid-template-rows: 1fr 2.5fr 3fr;
 }
 
-.dashboard-link {
+.sidebar-title-line, .sidebar-line {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+}
+
+.sidebar-line {
+    grid-auto-rows: 35px;
+}
+
+.sidebar-icon {
+    justify-self: center;
+}
+    /*The actual dashboard icon and p*/
+.sidebar-title-line {
     grid-row: 1 / 2;
 }
 
-.navigation-links, .other-links {
-    display: grid;
+.sidebar-title-line > p {
+    font-size: 1.25rem;
 }
-
+    /*Nav links*/
 .navigation-links {
     grid-row: 2 / 3;
 }
-
+    /*Other links*/
 .other-links {
     grid-row: 3 / 4;
 }
 
-.non-dashboard-container {
+.non-sidebar-container {
     grid-column: 2 / -1;
     
     display: grid;
