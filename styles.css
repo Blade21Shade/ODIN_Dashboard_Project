@@ -155,5 +155,22 @@ img.profile-picture {
     grid-row: 2 / -1;
 
     display: grid;
+    grid-template-rows: 1fr 8.5fr;
     grid-template-columns: 3fr 1fr;
+    column-gap: 15px;
+    margin: 0px 15px;
+}
+
+.project-cards, .other-cards {
+    grid-row: 2 / -1;
+    display: grid;
+}
+
+.project-cards {
+    grid-column: 1 / 2;
+    
+}
+
+.other-cards {
+    grid-column: 2 / -1;
 }
