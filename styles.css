@@ -154,11 +154,14 @@ img.profile-picture {
 .content-container {
     grid-row: 2 / -1;
 
+    background-color: lightgray;
+
     display: grid;
     grid-template-rows: 1fr 8.5fr;
     grid-template-columns: 3fr 1fr;
     column-gap: 15px;
-    margin: 0px 15px;
+    row-gap: 5px;
+    padding: 0px 15px;
 }
 
 .project-cards, .other-cards {
