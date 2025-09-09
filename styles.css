@@ -89,8 +89,17 @@ form > input[type="search"] {
 
 .top-area-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+    grid-template-columns: 1fr 1fr 2fr;
+    place-items: center end;
+}
+
+.top-area-grid p {
+    justify-self: center;
+}
+
+img.profile-picture {
+    border: 1px solid black;
+    border-radius: 100px; /*Big just so a circle is always made*/
 }
 
 .header-container > .bottom-area {
