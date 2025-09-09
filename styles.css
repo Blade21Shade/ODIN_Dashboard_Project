@@ -164,6 +164,17 @@ img.profile-picture {
     padding: 0px 15px;
 }
 
+.content-container p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.project-cards-heading, .other-cards-heading {
+    font-weight: bold;
+    align-self: end;
+    font-size: 1.1rem;
+}
+
 .project-cards, .other-cards {
     grid-row: 2 / -1;
     display: grid;
@@ -171,7 +182,39 @@ img.profile-picture {
 
 .project-cards {
     grid-column: 1 / 2;
+
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    grid-auto-rows: 200px;
+    gap: 25px;
+}
+
+.project-card {
+    box-shadow:
+        inset 0.5rem 0em gold,
+        1px 2px 2px rgb(103, 103, 103);
     
+    border-radius: 5px;
+    background-color: white;
+
+    padding: 15px 20px;
+
+    display: grid;
+    grid-template-rows: 0.75fr 3fr 0.75fr;
+}
+
+.project-card > .project-card-heading {
+    font-weight: bold;
+}
+
+.project-card > .project-card-content {
+    color: rgb(95, 95, 95);
+    overflow: hidden;
+}
+
+.project-card > .project-card-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
 }
 
 .other-cards {
