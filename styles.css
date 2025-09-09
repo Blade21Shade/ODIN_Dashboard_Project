@@ -139,6 +139,15 @@ img.profile-picture {
 
 .right-nested-area {
     grid-column: 3 / -1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.right-nested-area button {
+    border-radius: 10px;
+    padding: 5px 30px;
 }
 
 /*Content Area*/
