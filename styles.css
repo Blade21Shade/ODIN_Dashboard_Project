@@ -104,6 +104,41 @@ img.profile-picture {
 
 .header-container > .bottom-area {
     grid-row: 2 / -1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bottom-area > .left-nested-area {
+    grid-column: 1 / 2;
+    height: 90%;
+
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-nested-area p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.left-nested-area > .left-nested-area-grid {
+    display: grid;
+    grid-template-rows: 0.75fr 2.25fr;
+}
+
+.left-nested-area-grid > p {
+    font-size: 1rem;
+}
+
+.left-nested-area-grid > p + p {
+    font-size: 1.5rem;
+}
+
+.right-nested-area {
+    grid-column: 3 / -1;
 }
 
 /*Content Area*/
