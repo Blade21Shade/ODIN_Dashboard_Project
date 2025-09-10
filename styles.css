@@ -219,4 +219,35 @@ img.profile-picture {
 
 .other-cards {
     grid-column: 2 / -1;
+
+    display: grid;
+    grid-auto-rows: 300px;
+    row-gap: 25px; 
+}
+
+.announcement-card {
+    display: grid;
+    
+    row-gap: 5px;
+
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: white;
+
+    box-shadow: 1px 2px 2px rgb(103, 103, 103);
+}
+
+.announcement {
+    display: grid;
+}
+
+.announcement > .announcement-heading {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.announcement > .announcement-content {
+    font-size: 0.9rem;
+    color: rgb(95, 95, 95);
+    border-bottom: 1px solid black;
 }
